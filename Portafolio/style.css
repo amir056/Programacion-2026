@@ -1,0 +1,239 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+/* Lista de habilidades */
+#habilidades ul {
+    padding-left: 25px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Presentación con imagen */
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.sobre-mi-contenido img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.sobre-mi-contenido p {
+    flex: 1;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+
+    .sobre-mi-contenido img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Tarjetas de proyectos */
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#proyectos > h2 {
+    margin-bottom: 5px;
+}
+
+.proyecto {
+    background-color: #f4f7fb;
+    border: 1px solid #d9e2f0;
+    border-left: 5px solid #1e3a8a;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proyecto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+.proyecto h3 {
+    color: #1e3a8a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Habilidades */
+#habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+#habilidades li {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#habilidades li:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+
+    .sobre-mi-contenido img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .proyecto {
+        padding: 15px;
+    }
+}
